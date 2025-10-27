@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor movements</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="vendor movements.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <h2>Vendor movements <span class="badge">240 vendors</span></h2>
+        <p>Keep track of vendor and their security ratings.</p>
+      </div>
+      <div class="header-actions">
+        <button class="import"><i class="fa-solid fa-arrow-rotate-right"></i> Import</button>
+        <button class="add-vendor"><i class="fa-solid fa-plus"></i> Add vendor</button>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <div class="tabs">
+        <button class="active">View all</button>
+        <button>Monitored</button>
+        <button>Text</button>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search">
+        <button class="filter-btn"><i class="fa-solid fa-filter"></i> Filters</button>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Vendor <i class="fa-solid fa-chevron-down"></i></th>
+          <th>Rating</th>
+          <th>Last assessed</th>
+          <th>License use</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" checked></td>
+          <td><div class="vendor"><img src="image/catalog.jpg"><div><p class="name">Catalog</p><p class="domain">catalogapp.io</p></div></div></td>
+          <td><div class="rating"><div class="bar"><div class="fill" style="width: 60%;"></div></div><span>60 <span class="up">↑ 5%</span></span></div></td>
+          <td>22 Jan 2022</td>
+          <td><span class="tag active">Active</span><span class="tag blue">Customer data</span><span class="tag gray">Admin</span><span class="tag more">+4</span></td>
+          <td class="actions"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" checked></td>
+          <td><div class="vendor"><img src="image/circooles.jpg"><div><p class="name">Circoole</p><p class="domain">getcicoloes.com</p></div></div></td>
+          <td><div class="rating"><div class="bar"><div class="fill" style="width: 72%;"></div></div><span>72 <span class="down">↓ 4%</span></span></div></td>
+          <td>20 Jan 2022</td>
+          <td><span class="tag active">Active</span><span class="tag purple">Business data</span><span class="tag gray">Admin</span><span class="tag more">+2</span></td>
+          <td class="actions"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" checked></td>
+          <td><div class="vendor"><img src="image/refresh.jpg"><div><p class="name">Command+R</p><p class="domain">cmdr.ai</p></div></div></td>
+          <td><div class="rating"><div class="bar"><div class="fill" style="width: 78%;"></div></div><span>78 <span class="up">↑ 6%</span></span></div></td>
+          <td>24 Jan 2022</td>
+          <td><span class="tag active">Active</span><span class="tag blue">Customer data</span><span class="tag pink">Financials</span></td>
+          <td class="actions"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td><div class="vendor"><img src="image/hourglass.jpg"><div><p class="name">Hourglass</p><p class="domain">hourglass.app</p></div></div></td>
+          <td><div class="rating"><div class="bar"><div class="fill" style="width: 38%;"></div></div><span>38 <span class="up">↑ 8%</span></span></div></td>
+          <td>26 Jan 2022</td>
+          <td><span class="tag active">Active</span><span class="tag green">Database access</span><span class="tag gray">Admin</span></td>
+          <td class="actions"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td><div class="vendor"><img src="image/layers.jpg"><div><p class="name">Layers</p><p class="domain">getlayers.io</p></div></div></td>
+          <td><div class="rating"><div class="bar"><div class="fill" style="width: 42%;"></div></div><span>42 <span class="down">↓ 1%</span></span></div></td>
+          <td>18 Jan 2022</td>
+          <td><span class="tag active">Active</span><span class="tag orange">Salesforce</span><span class="tag gray">Admin</span><span class="tag more">+2</span></td>
+          <td class="actions"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" checked></td>
+          <td><div class="vendor"><img src="image/Quotient.jpg"><div><p class="name">Quotient</p><p class="domain">quotient.co</p></div></div></td>
+          <td><div class="rating"><div class="bar"><div class="fill" style="width: 66%;"></div></div><span>66 <span class="down">↓ 6%</span></span></div></td>
+          <td>28 Jan 2022</td>
+          <td><span class="tag active">Active</span><span class="tag purple">Business data</span><span class="tag gray">Admin</span><span class="tag more">+4</span></td>
+          <td class="actions"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" checked></td>
+          <td><div class="vendor"><img src="image/sisyphus.jpg"><div><p class="name">Sisyphus</p><p class="domain">sisyphus.com</p></div></div></td>
+          <td><div class="rating"><div class="bar"><div class="fill" style="width: 91%;"></div></div><span>91 <span class="up">↑ 2%</span></span></div></td>
+          <td>16 Jan 2022</td>
+          <td><span class="tag inactive">Inactive</span><span class="tag blue">Customer data</span><span class="tag pink">Financials</span></td>
+          <td class="actions"><i class="fa-solid fa-trash"></i><i class="fa-solid fa-pen"></i></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <p>Page 1 of 10</p>
+      <div>
+        <button>Previous</button>
+        <button>Next</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
